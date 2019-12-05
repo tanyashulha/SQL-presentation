@@ -26,7 +26,6 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<p style="font-size: 60px;color: #e3a0d0;">SQL as a programming language</p>
 				    <img style="background: transparent;border:none;box-shadow: none;height:350px;" src="img/sql.png" alt="">
 				</section>
 				<section>
@@ -53,6 +52,89 @@
 				</section>
 				<section>
 						<p style="font-size: 40px;color: #e3a0d0;">A Query is a set of instructions given to the RDMBS (written in SQL) that tell the RDMBS what information a developer wants it to retrieve for the developer.</p>
+				</section>
+				<section>
+					<p style="font-size: 60px;color: #e3a0d0;">Example &raquo;</p>
+			   </section>
+			   <section>
+					<img style="background: transparent;border:none;box-shadow: none;height:250px;" src="img/2.png" alt="">
+					<p style="font-size: 30px;color: #e3a0d0;">View the table:</p>
+					<img style="background: transparent;border:none;box-shadow: none;height:200px;" src="img/3.png" alt="">
+				</section>
+				<section>
+					<p style="font-size: 30px;color: #e3a0d0;margin-bottom: 50px;">Table operations:</p>
+					<ul style="font-size: 26px;color: #e3a0d0;">
+						<li style="margin-bottom: 30px;">Delete a table: <span style="font-style: italic;color: black;background-color: gray;padding: 5px 10px;"> DROP TABLE student;</span></li>
+						<li style="margin-bottom: 30px;">Add a table: <span style="font-style: italic;color: black;background-color: gray;padding: 5px 10px;"> ALTER TABLE student ADD gpa DECIMAL(3,2);</span></li>						
+						<li style="margin-bottom: 30px;">Delete a column: <span style="font-style: italic;color: black;background-color: gray;padding: 5px 10px;"> ALTER TABLE student DROP gpa;</span></li>
+						<li style="margin-bottom: 30px;">Delete a row: <span style="font-style: italic;color: black;background-color: gray;padding: 5px 10px;"> DELETE FROM student WHERE student_id = 1</span></li>
+					</ul>
+				</section>
+				<section>
+					<p style="font-size: 30px;color: #e3a0d0;margin-bottom: 50px;">Insert data:</p>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/4.png" alt="">
+				</section>
+				<section>
+					<p style="font-size: 30px;color: #e3a0d0;margin-bottom: 50px;">View all data:</p>
+					<p style="font-size: 24px;color: #e3a0d0;margin-bottom: 50px;">SELECT * FROM student;</p>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/5.png" alt="">
+				</section>
+				<section>
+					<p style="font-size: 30px;color: #e3a0d0;margin-bottom: 50px;">What if we don’t know a student’s major?</p>
+					<p style="font-size: 24px;font-style: italic;color: black;background-color: gray;padding: 5px 10px;margin-bottom: 50px;">INSERT INTO student(student_id, name) VALUES(4, 'Kyle');</p>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/6.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:250px;" src="img/7.png" alt="">
+					<p style="font-size: 30px;color: #e3a0d0;">View the table:</p>
+					<img style="background: transparent;border:none;box-shadow: none;height:200px;" src="img/8.png" alt="">
+				</section>
+				<section>
+					<p style="font-size: 30px;color: #e3a0d0;margin-bottom: 50px;">Delete multiple rows:</p>
+					<p style="font-size: 24px;font-style: italic;color: black;background-color: gray;padding: 5px 10px;margin-bottom: 50px;">DELETE FROM student WHERE student_id IN (4,5,6,7,8);</p>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/9.png" alt="">
+				</section>
+				<section>
+					<p style="font-size: 30px;color: #e3a0d0;margin-bottom: 50px;">Change values that match a condition:</p>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/10.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/11.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:100px;" src="img/12.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:100px;" src="img/13.png" alt="">
+				</section>
+				<section>
+					<p style="font-size: 30px;color: #e3a0d0;margin-bottom: 50px;">Basic queries: </p>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/14.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/15.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/16.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/17.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/18.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/19.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/18.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/19.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/20.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/21.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/22.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/23.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/24.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/25.png" alt="">
+				</section>
+				<section>
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/26.png" alt="">
+					<img style="background: transparent;border:none;box-shadow: none;height:150px;" src="img/28.png" alt="">
 				</section>
 			</div>
 		</div>
